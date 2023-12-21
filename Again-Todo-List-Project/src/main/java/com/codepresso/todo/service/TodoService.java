@@ -15,18 +15,18 @@ public class TodoService {
     }
 
     public List<Todo> getTodoList(){
-        //todo todoList 정보들을 반환 하세요
+        //todo todoList 정보들을 반환
         return todoList;
     }
 
     public void addTodo(Todo todo) {
-        //todo todoList에 새로운 항목을 추가하세요
+        //todo todoList에 새로운 항목을 추가
         todo.setId(todoList.size());
         todoList.add(todo);
     }
 
     public void deleteTodo(int index) {
-        //todo todoList에서 index에 해당하는 항목을 삭제하세요
+        //todo todoList에서 index에 해당하는 항목을 삭제
         todoList.remove(index);
     }
 }

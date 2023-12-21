@@ -28,7 +28,6 @@ public class TodoController {
     @PostMapping
     public ResultDto addTodo(@RequestBody Todo todo) {
         todoService.addTodo(todo);
-        //todo return code는 변경하지 마세요
         return new ResultDto(200, "Success");
     }
 
@@ -36,7 +35,6 @@ public class TodoController {
     @DeleteMapping(value = "/{id}")
     public ResultDto deleteTodo(@PathVariable("id") Integer id) {
         todoService.deleteTodo(id); // 삭제 호출
-        //todo return code는 변경하지 마세요
         return new ResultDto(200, "Success");
     }
 
